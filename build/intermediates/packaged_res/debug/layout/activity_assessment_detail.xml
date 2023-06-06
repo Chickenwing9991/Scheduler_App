@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".AssessmentDetailActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/assessment_detail_title_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Assessment Title"
+            android:textAppearance="?attr/textAppearanceHeadline6" />
+
+        <EditText
+            android:id="@+id/assessment_detail_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:hint="Enter Assessment Title" />
+
+        <TextView
+            android:id="@+id/assessment_detail_end_date_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="End Date"
+            android:textAppearance="?attr/textAppearanceHeadline6" />
+
+        <EditText
+            android:id="@+id/assessment_detail_end_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="date"
+            android:hint="Enter End Date" />
+
+        <TextView
+            android:id="@+id/assessment_detail_type_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Assessment Type"
+            android:textAppearance="?attr/textAppearanceHeadline6" />
+
+        <Spinner
+            android:id="@+id/assessment_detail_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/assessment_detail_save_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Save" />
+
+        <Button
+            android:id="@+id/assessment_detail_delete_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Delete" />
+
+    </LinearLayout>
+</ScrollView>
